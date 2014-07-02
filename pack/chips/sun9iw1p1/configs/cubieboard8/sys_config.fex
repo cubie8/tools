@@ -264,7 +264,7 @@ twi_scl         = port:PH4<2><default><default><default>
 twi_sda         = port:PH5<2><default><default><default>
 
 [twi3]
-twi_used        = 0
+twi_used        = 1
 twi_scl         = port:PG10<2><default><default><default>
 twi_sda         = port:PG11<2><default><default><default>
 
@@ -620,15 +620,15 @@ lcd1_hue                 = 50
 ;smart_color           90:normal lcd screen 65:retina lcd screen(9.7inch)
 ;----------------------------------------------------------------------------------
 [lcd0_para]
-lcd_used            = 0
+lcd_used            = 1
 
 lcd_driver_name     = "default_lcd"
 lcd_if              = 3
-lcd_x               = 1280
-lcd_y               = 800
+lcd_x               = 1024
+lcd_y               = 768
 lcd_width           = 150
 lcd_height          = 94
-lcd_dclk_freq       = 70
+lcd_dclk_freq       = 65
 lcd_pwm_used        = 1
 lcd_pwm_ch          = 0
 lcd_pwm_freq        = 50000
@@ -717,7 +717,7 @@ pwm_positive        = port:PH8<3><0><default><default>
 ;--------------------------------------------------------------------------------
 [csi0]
 
-vip_used                 = 1
+vip_used                 = 0
 vip_mode                 = 0
 vip_dev_qty              = 1
 vip_define_sensor_list     = 0
@@ -945,7 +945,7 @@ usb_restric_capacity= 5
 usb_used            = 1
 usb_port_type       = 1
 usb_detect_type     = 0
-usb_drv_vbus_gpio   = port:PH04<1><0><default><0>
+usb_drv_vbus_gpio   = port:PH14<1><0><default><0>
 usb_restrict_gpio   =
 usb_host_init_state = 1
 usb_restric_flag    = 0
@@ -957,7 +957,7 @@ usb_restric_flag    = 0
 usb_used            = 1
 usb_port_type       = 1
 usb_detect_type     = 0
-usb_drv_vbus_gpio   = port:PH05<1><0><default><0>
+usb_drv_vbus_gpio   = port:PH15<1><0><default><0>
 usb_restrict_gpio   =
 usb_host_init_state = 1
 usb_restric_flag    = 0
